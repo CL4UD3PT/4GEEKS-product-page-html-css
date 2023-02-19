@@ -2,6 +2,7 @@
     Here you put styles that modify the original behavior CSS/HTML had,
     for example: list elements come with a little circle that nobody uses anymore.
  */
+body{color:#999; margin:0; font-family:'Noto Sans JP', sans-serif;font-size: 15px;}
 ul{margin: 0; padding:0;}
 ul li{list-style: none;}
 
@@ -9,12 +10,43 @@ ul li{list-style: none;}
     BEHAVIORAL STYLES
     for example: .horizontal, .container, .p-1 (for padding one)
 */
-.p-1{ padding: 10px; }
+.p-1{padding: 10px;}
+.p-01{padding: 0 10px;}
+.p-21{padding: 20px 10px;}
+.bp-1{border-bottom: 1px solid #bdbdbd; padding-bottom:20px;}
+.dark-text {color: #555;}
 
+.container {
+    max-width: 900px;
+    margin: auto;
+}
 
+button{background: #363637; color:#fff; padding: 10px 20px; margin-top: 20px;}
+.layout{display:flex; justify-content: flex-end;}
+.layout ul li{margin-left: 10px;}
+.layout.layout-left{justify-content: flex-start;}
+.layout.layout-left li:not(:last-child):after {content: "/"; margin: 0 5px;}
+.layout.horizontal{flex-flow: row;}
+.thumbnail.layout.horizontal .img{flex-grow: 1; margin-top: 10px;}
+.layout.horizontal .img:first-child{margin-left: 0;}
 
-
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 10px;
+    min-height: 10px;
+}
+.w-65{width: 60%;}
+.w-35{width: 40%;}
 /* 
     SPECIFIC TO YOUR WEBSITE 
     The more senior you become the less you have specific styles
 */
+.logo{flex-grow: 1; font-weight: 500;}
+.menu{flex-grow: 2;}
+.main-img{height: 350px !important;}
+.gallery .img {height: 130px;}
+.price{font-size:1.8em;}
+.product{font-weight: 400;}
+.breadcrumbs{font-size: .8em;}

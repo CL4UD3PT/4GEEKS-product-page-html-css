@@ -1,0 +1,58 @@
+/* RESETS
+    Here you put styles that modify the original behavior CSS/HTML had,
+    for example: list elements come with a little circle that nobody uses anymore.
+ */
+ body{color:#363637; margin:0; font-family:'Noto Sans JP', sans-serif;}
+ ul{margin: 0; padding:0;}
+ ul li{list-style: none;}
+ 
+ /* 
+     BEHAVIORAL STYLES
+     for example: .horizontal, .container, .p-1 (for padding one)
+ */
+ .container{
+     max-width: 900px;
+     margin: auto;
+ }
+ 
+ .bb-pb-1s-25{border-bottom:1px solid; padding-bottom:25px;}
+ .p-1{ padding: 10px; }
+ .p-2{ padding: 20px; }
+ .p-2-1{padding: 20px 10px;}
+ 
+ 
+ /* 
+     SPECIFIC TO YOUR WEBSITE 
+     The more senior you become the less you have specific styles
+ */
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .logo { font-size: 1.5em; }
+ 
+ .menu { display: flex; }
+ 
+ .menu li {
+     font-size: 1.1em;
+     margin-left: 20px;
+ }
+ 
+ .menu li:hover {
+     color: #000;
+     cursor: pointer;
+ }
+ 
+ .breadcrumbs ul { display: flex; }
+ .breadcrumbs ul li:not(:last-child):after {content: "/"; margin: 0 5px;}
+ 
+ .product-content {display: flex;}
+ 
+ .gallery ul{
+     display:flex;
+     justify-content:space-between;
+     padding-top: 20px;
+ }
+ .img-main{width: 55vw; height:60vh;}
+ .img{width:15vw; height:20vh;}

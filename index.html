@@ -3,8 +3,45 @@
     <head>
         <title>Product Langing Page in Plain HTML/CSS - BreatheCode</title>
         <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <p>Hello! Update this index.html file and the style.css to start seing changes on your website</p>
+        <div class="container">
+            <div class="navbar layout horizontal bp-1">
+                <div class="logo p-1 dark-text">SHOPSHOP</div>
+                <ul class="menu layout horizontal p-1 dark-text">
+                    <li>Products</li>
+                    <li>About</li>
+                    <li>My Account</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+            <div class="breadcrumbs p-21">
+                <ul class="menu layout horizontal layout-left">
+                    <li>HOME</li>
+                    <li>HOUSEHOLD PLANTS</li>
+                    <li class="dark-text">BONSAI</li>
+                </ul>
+            </div>
+            <div class="product-content layout horizontal">
+                <div class="gallery w-65 p-01">
+                    <div class="img main-img" style="background-image: url('./assets/product3.jpeg');"></div>
+                    <ul class="thumbnail layout horizontal">
+                        <li class="img" style="background-image: url('./assets/product3.jpeg');"></li>
+                        <li class="img" style="background-image: url('./assets/product2.jpeg');"></li>
+                        <li class="img" style="background-image: url('./assets/product1.jpeg');"></li>
+                    </ul>
+                </div>
+                <div class="product-info w-35 p-01">
+                    <h1 class="product dark-text">Bonsai</h1>
+                    <p class="price bp-1 dark-text">$19.99</p>
+                    <p>The purposes of bonsai are primarily contemplation for the viewer, and the pleasent exercise of effort and ingenuity for the grower.</p>
+                    <p>By constrast with other plant cultivation practices, bonsai is not intended for production of food or for medicine. Instead, bonsai practice focuses on long-term cultivation and shaping of one or more small trees growing in a container.</p>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
