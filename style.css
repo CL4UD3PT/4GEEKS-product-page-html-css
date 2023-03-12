@@ -21,7 +21,8 @@ ul li{list-style: none;}
     margin: auto;
 }
 
-button{background: #363637; color:#fff; padding: 10px 20px; margin-top: 20px;}
+.product-info button{background: #363637; color:#fff; padding: 10px 20px; margin-top: 20px;}
+.product-info button:active{background: #555;}
 .layout{display:flex; justify-content: flex-end;}
 .layout ul li{margin-left: 10px;}
 .layout.layout-left{justify-content: flex-start;}
